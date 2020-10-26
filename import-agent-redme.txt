@@ -1,0 +1,6 @@
+1优先执行备份命令，备份当前域所有组策略到指定文件内
+2.将文件解压到任意目录下
+3.导入文件后执行命令，例如下所示：
+import-module import-agent.ps1
+import-AgentGPO -Domain subdomain.domain.com  -GPOPath  C:\Agent  -BackUpDrive  C:\BackGPO
+4、{7F1493CA-E0E1-45F0-A0DA-D83392C96F8D}为预先设置好审核策略的组策略的导出文件。实际情况可以将脚本内的GPOID替换为自定义导出的组策略
